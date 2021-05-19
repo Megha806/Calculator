@@ -1,0 +1,139 @@
+*{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+@mixin grad {
+    background-color: #b7e9f7;
+}
+
+@mixin shadow {
+    box-shadow: -6px -6px 9px #92dff3,6px 6px 9px rgba(#0E98BE,0.4);
+}
+
+@mixin shadow-inset {
+    box-shadow: inset -6px -6px 9px #92dff3,inset 6px 6px 9px rgba(#0E98BE,0.4);
+}
+
+@mixin ishadow {
+    box-shadow: inset -6px -6px 9px #92dff3,inset 6px 6px 9px rgba(#0E98BE,.4);
+}
+
+
+body{
+    @include grad;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    top: 15px;
+    left: 87%;
+    position: absolute;
+   
+    h1 {
+        top: 30px;
+        position: fixed;
+        left: 40.5%;
+        font-size: 50px;
+           color: #083A5B;
+          @include shadow-inset;
+          @include shadow;
+          border-radius: 10px;
+          padding: 5px;
+          height: 60px;
+          font-family: 'Pattaya', sans-serif;
+          letter-spacing: .1cm;
+}
+}
+
+
+
+
+
+main{
+    @include shadow;
+    padding: 2rem;
+    border-radius: 40px;
+    @include grad;
+
+    input,button{
+        outline: none;
+    }
+
+    input {
+        background-color:#fff;
+        @include shadow;
+        @include ishadow;
+        width: 320px;
+        height: 60px;
+        padding: 16px 32px;
+        text-align: right;
+        border: none;
+        color: black;
+        border-radius: 10px;
+        text-shadow: -1px -1px 2px #fff, 2px 2px 2px rgba(#000,0.1)
+        
+    }
+
+    .keys{
+        @include grad;
+        display: grid;
+        grid-template-columns:repeat(4 , 1fr);
+        grid-gap: 0.8rem;
+        margin-top: 20px;
+    }
+
+    button{
+        @include grad;
+        @include  shadow;
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bolder;
+
+       
+
+        &:active {
+           @include shadow-inset;
+        }
+    }
+    .op__key{
+        color:black;
+        font-weight: bolder;
+        font-size: 25px;
+     }
+
+     .eq__key{
+         font-size: 40px;
+     }
+}
+
+footer{
+    bottom: 0%;
+    text-align: center;
+    position: absolute;
+    height: 60px;
+    background-color: aliceblue;
+    width: 100%;
+    color: #083A5B;
+    font-weight: bold;
+    padding: 3px;
+    left: 0%;
+
+    a img{
+        position: relative;
+        left: 39%;
+        padding: 3px;
+        padding-bottom: 0px;
+    }
+}

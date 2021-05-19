@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="html , sass , css , javascript">
+    <meta name="description" content="Web Calculator using Html , Css , Jvascript , Sass">
+
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Web-Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculator</h1>
+      
+    </header>
+    <main>
+        <input type="text" id="result">
+        <div class="keys">
+            <button class="op__key" onclick="clr()">AC</button>
+            <button class="op__key" onclick="view('(')">(</button>
+            <button class="op__key" onclick="view(')')">)</button>
+            <button class="op__key" onclick="backspace()" value="backspace"><span class="material-icons"> backspace</span></button>
+
+                    <button onclick="view('7')">7</button>
+                    <button onclick="view('8')">8</button>
+                    <button onclick="view('9')">9</button>
+
+                    <button class="op__key" op="multiply" onclick="view('*')">X</button>
+                    <button onclick="view('4')">4</button>
+                    <button onclick="view('5')">5</button>
+                    <button onclick="view('6')">6</button>
+
+                    <button class="op__key" op="substract" onclick="view('-')">-</button>
+                    <button onclick="view('1')">1</button>
+                    <button onclick="view('2')">2</button>
+                    <button onclick="view('3')">3</button>
+
+                    <button class="op__key" op="add" onclick="view('+')">+</button>
+                    <button onclick="view('0')">0</button>
+                    <button onclick="view('.')">.</button>
+                    <button onclick="view('00')">00</button>
+                    <button class="eq__key" onclick="compute('')">=</button>
+
+        </div>
+        
+
+    </main>
+
+    <footer>
+        -Megha Khandelwal
+        <a href="https://www.linkedin.com/in/megha-khandelwal-9b2676208"><img src="link.png" height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/Megha806/Calculator.git"><img src="github.png" height="40px" width="40px"></a>
+    </footer>
+</body>
+
+
+<script src="index.js"></script>
+ 
+
+<!--<footer>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <span>-Megha Khandelwal</span> 
+    <a href="https://www.linkedin.com/in/megha-khandelwal-9b2676208"><img src="link.png" height="40px" width="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/Megha806/Calculator.git"><img src="github.png" height="40px" width="40px"></a>
+</footer>-->
+
+</html>
